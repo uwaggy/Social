@@ -122,7 +122,7 @@ const[open,setOpen] = useState(true)
         </div>
         <div>
           <p className='hover:text-sky-800 cursor-pointer font-bold'>Follow us</p>
-          <div className='flex'>
+          <div className='flex gap-1'>
           <p className=' hover:font-bold cursor-pointer text-sm'><Icon icon="ic:sharp-facebook" color="black" width="24" /></p>
           <p className=' hover:font-bold cursor-pointer text-sm'><Icon icon="simple-icons:x" color="black" width="24" /></p>
           <p className=' hover:font-bold cursor-pointer text-sm'><Icon icon="ri:instagram-fill" color="black" width="24" /></p>
