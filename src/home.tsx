@@ -4,7 +4,7 @@ import account from './assets/translate.png'
 import level from './assets/consult.avif'
 // import thinking from './assets/thinking.avif'
 import start from './assets/support.avif'
-import logo from './assets/logo3.jpg'
+import logo from './assets/logo.png'
 // import witness2 from './assets/witness2.jpg'
 // import witness3 from './assets/witness3.jpg'
 import "tailwindcss/base.css";
@@ -20,7 +20,7 @@ const Home = () => {
                 <div className=" text-sky-500 md:h-[7vh] relative	cursor-pointer flex flex-row gap-x-[18rem] ">
                     <div className='flex'>
                         <Icon onClick={() => setOpen(!open)} className='md:hidden w-40 font-bold cursor-pointer' icon="material-symbols:menu" width="40" color="skyblue" />
-                        <img className=' w-10 h-10 rounded-3xl' src={logo} alt='logo' />
+                        <img className='w-11 h-8' src={logo} alt='logo' />
                         <a className='font-bold hover:border-b-2  border-sky-600 flex items-center px-2 text-xl
           '>SOCIAL</a>
                     </div>
@@ -100,9 +100,9 @@ const Home = () => {
       </div> */}
             <p className='font-bold text-2xl text-center  p-10 '>How much do l have to pay? </p>
             <div className='md:justify-center items-center flex gap-28 grid-row md:flex-row flex-col place-content-center md:place-content-center '>
-                <div className=' bg-sky-300 text-sm w-72 p-7 rounded-xl h-80'>
+                <div className=' bg-sky-200 text-sm w-72 p-7 rounded-xl h-80'>
                     <p className=' text-lg   font-bold p-3'>Buying lingots </p>
-                    <p className='p-1'>We deeply value your support and generosity, and every purchase of Lingots, regardless of its size, makes a meaningful difference.</p>
+                    <p className='p-1'>Small or large, your donations and purchases make a difference.</p>
                     <h3 className='font-bold p-1'>Lingot Options</h3>
                     <ul className='p-2'>
                         <li>$10 Lingots</li>
@@ -115,9 +115,9 @@ const Home = () => {
                     <a className='font-bold p-1' href="#donate-section">Get Your Lingots</a>
 
                 </div>
-                <div className=' bg-sky-300 text-sm  p-5 w-72 rounded-xl h-80'>
+                <div className=' bg-sky-200 text-sm  p-5 w-72 rounded-xl h-80'>
                     <p className=' text-lg font-bold p-3'>Donations </p>
-                    <p>Your generosity is highly valued, and you can make a meaningful impact by choosing from the available donation amounts.</p>
+                    <p>Your generosity is greatly appreciated, and your choice of donation amount can have a significant impact.</p>
                     <h3 className='font-bold p-2'>Donation Options</h3>
                     <ul className='p-2'>
                         <li>$10 Donation</li>
@@ -129,13 +129,9 @@ const Home = () => {
 
                     <a className='font-bold p-2' href="#donate-section">Make a Donation</a>
                 </div>
-                <div className='text-sm bg-sky-300 p-6 w-72 rounded-xl h-80'>
+                <div className='text-sm bg-sky-200 p-6 w-72 rounded-xl h-80'>
                     <p className=' text-lg font-bold p-1'>Buying hearts </p>
                     <p>Show your appreciation with $1 blue hearts – buy more, share more love.</p>
-                    <h3 className='font-bold p-2'>Individual Pricing</h3>
-                    <ul>
-                        <li>1 Blue Heart - $1</li>
-                    </ul>
                     <h3 className='font-bold p-2'>Special Offers</h3>
                     <ul className='p-2'>
                         <li>10 Blue Hearts - $9 (Save $1)</li>
@@ -147,7 +143,7 @@ const Home = () => {
             </div>
             <div className='md:flex-row flex-col flex gap-36 footer h-92	 bg-sky-200 mt-20 '>
                 <div className='flex gap-5'>
-                    <img className=' w-10 h-10 rounded-3xl' src={logo} alt='logo' />
+                    <img className='w-11 h-8' src={logo} alt='logo' />
                     <p className='font-bold flex text-xl
           '>SOCIAL</p>
                 </div>
