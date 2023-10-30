@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import profile from './assets/winking.jfif'
@@ -27,7 +28,7 @@ const Contact = () => {
           '>SOCIAL</a>
                 </div>
                 <div className={`min-h-full ${open ? 'invisible' : 'visible'} col-span-4 md:invisible md:static absolute bg-sky-100 p-3 z-20 top-[8vh] left-[10vw] flex md:flex-row flex-col gap-4`}>
-                    <Link to={'/home'} className='font-bold  flex items-center px-2'>Home</Link>
+                    <Link to={'/'} className='font-bold  flex items-center px-2'>Home</Link>
                     <Link to={''} className='font-bold  flex items-center px-2'>Lesson</Link>
                     <Link to={''} className='font-bold  flex items-center px-2'>Translate</Link>
                     <Link to={'/contact'} className='font-bold  flex items-center px-2'>Contact</Link>
@@ -41,7 +42,7 @@ const Contact = () => {
             </div>
             <div className=' bg-sky-100 transform translate-x-52 flex gap-60'>
                 <div className='invisible md:visible font-bold cursor-pointer   gap-6 flex'>
-                <Link to={'/home'} className='font-bold px-2'>Home</Link>
+                <Link to={'/'} className='font-bold px-2'>Home</Link>
                     <div className='flex'>
                         <a>Products</a>
                         <Icon className='relative top-1' icon="mdi:menu-down" />

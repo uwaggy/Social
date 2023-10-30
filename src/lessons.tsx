@@ -1,7 +1,8 @@
 import { Icon } from '@iconify/react';
 import "tailwindcss/base.css";
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import  { useState } from 'react';
+// import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from './assets/logo.png'
 import profile from './assets/winking.jfif'
 
@@ -18,7 +19,7 @@ const Lesson = () => {
           '>SOCIAL</a>
                     </div>
                     <div className={`min-h-full ${open ? 'invisible' : 'visible'} col-span-4 md:visible md:static absolute bg-sky-100 p-3 z-20 top-[8vh] left-[10vw] flex md:flex-row flex-col gap-4`}>
-                        <Link to={'/home'} className='font-bold  flex items-center px-2'>Home</Link>
+                        <Link to={'/'} className='font-bold  flex items-center px-2'>Home</Link>
                         <Link to={'/lesson'} className='font-bold  flex items-center px-2'>Lesson</Link>
                         <Link to={''} className='font-bold  flex items-center px-2'>Translate</Link>
                         <Link to={'/contact'} className='font-bold  flex items-center px-2'>Contact</Link>
@@ -34,7 +35,7 @@ const Lesson = () => {
            
             <div className='md:flex-row flex-col md: flex gap-16 items-center md:translate-x-44'>
                 <div className='flex flex-col gap-y-7 items-center translate-y-28'>
-                    <div className='flex bg-sky-600 w-64 rounded-xl font-bold gap-14 justify-center items-center p-1 '>
+                    <div className='flex bg-sky-600 w-64 rounded-xl font-bold gap-14 justify-center items-center p-1 cursor-pointer  '>
                         <p>English</p>
                         <Icon icon="gridicons:dropdown" />
                     </div>
@@ -44,7 +45,7 @@ const Lesson = () => {
                 </div>
                 <Icon className='translate-y-16' icon="mdi:exchange" width="50" />
                 <div className='flex flex-col gap-y-7 items-center translate-y-28'>
-                    <div className='flex bg-sky-600 w-64 rounded-xl font-bold gap-14 justify-center items-center p-1 '>
+                    <div className='cursor-pointer flex bg-sky-600 w-64 rounded-xl font-bold gap-14 justify-center items-center p-1 '>
                         <p>Somali</p>
                         <Icon icon="gridicons:dropdown" />
                     </div>

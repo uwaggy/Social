@@ -4,7 +4,7 @@ import level from './assets/consult.avif'
 import start from './assets/support.avif'
 import logo from './assets/logo.png'
 import "tailwindcss/base.css";
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import { useState } from 'react'
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
           '>SOCIAL</a>
                     </div>
                     <div className={`min-h-full ${open ? 'invisible' : 'visible'} col-span-4 md:visible md:static absolute bg-sky-100 p-3 z-20 top-[8vh] left-[10vw] flex md:flex-row flex-col gap-4`}>
-                        <Link to={''} className='font-bold  flex items-center px-2'>Home</Link>
+                        <Link to={'/'} className='font-bold  flex items-center px-2'>Home</Link>
                         <Link to={'/lesson'} className='font-bold  flex items-center px-2'>Lesson</Link>
                         <Link to={''} className='font-bold  flex items-center px-2'>Translate</Link>
                         <Link to={'/contact'} className='font-bold  flex items-center px-2'>Contact</Link>
