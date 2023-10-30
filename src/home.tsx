@@ -1,12 +1,8 @@
 import profile from './assets/winking.jfif'
-
 import account from './assets/translate.png'
 import level from './assets/consult.avif'
-// import thinking from './assets/thinking.avif'
 import start from './assets/support.avif'
 import logo from './assets/logo.png'
-// import witness2 from './assets/witness2.jpg'
-// import witness3 from './assets/witness3.jpg'
 import "tailwindcss/base.css";
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
@@ -26,7 +22,7 @@ const Home = () => {
                     </div>
                     <div className={`min-h-full ${open ? 'invisible' : 'visible'} col-span-4 md:visible md:static absolute bg-sky-100 p-3 z-20 top-[8vh] left-[10vw] flex md:flex-row flex-col gap-4`}>
                         <Link to={''} className='font-bold  flex items-center px-2'>Home</Link>
-                        <Link to={''} className='font-bold  flex items-center px-2'>Lesson</Link>
+                        <Link to={'/lesson'} className='font-bold  flex items-center px-2'>Lesson</Link>
                         <Link to={''} className='font-bold  flex items-center px-2'>Translate</Link>
                         <Link to={'/contact'} className='font-bold  flex items-center px-2'>Contact</Link>
                         <Link to={''} className='font-bold  flex items-center px-2'>Subscribe</Link>
@@ -40,9 +36,6 @@ const Home = () => {
                     <div>
                         <p className=' text-3xl font-semibold transform translate-x-16 translate-y-16 text-left '>The best way to learn<br /> or preactice a new<br /> language</p>
                     </div>
-                    {/* <div>
-          <img className='rounded-xl  w-96 h-60' src={background} alt='background' />
-        </div> */}
                 </div>
                 <div className='flex gap-7 items-center px-12  '>
                     <button className=' hover:bg-sky-600  bg-sky-300 p-2 rounded-r-lg rounded-l-lg text-white font-bold '>Enroll Now</button>
@@ -68,36 +61,6 @@ const Home = () => {
                     <p className='p-3 text-xs font-light'>We offer exceptional assistance and resolve queries, ensuring a seamless and responsive experience for all.</p>
                 </div>
             </div>
-            {/* <div className='flex  p-10 gap-24 md:flex-row flex-col'>
-        <img className='w-64 h-64 transform translate-x-16 ' src={thinking} alt='thinking' />
-        <div className='transform translate-x-20 '>
-        <p className='text-xl  font-bold w-3/5		'>Unlock the Potential of Language with Our Expertise.</p>
-          <p className='w-3/5	 text-lg font-light p-2'><span className='font-bold'>• Proficient English-Somali Translation</span> We excel in bridging linguistic gaps, ensuring effective communication.<br/>
-<span className='font-bold'>• Enhanced Cross-Cultural Understanding</span> Our expertise fosters cultural insights and seamless interaction.<br/>
-<span className='font-bold'>• Empowering Communication </span>We enable meaningful exchanges across diverse backgrounds and regions.</p>
-<button className='hover:bg-sky-600  bg-sky-300 p-1 rounded-r-lg rounded-l-lg text-white font-bold'>Learn More</button>
-        </div>
-      </div> */}
-            {/* <p className='font-bold text-xl  text-center p-5'>Our witnesses</p>
-      <div className='grid md:grid-cols-5 sm:grid-col-7 grid-cols-1 '>
-        <div className=' col-span-2 w-5/6 mx-auto pt-[3rem] grid grid-cols-2  '>
-          <img className=' p-1 transform translate-x-20 rounded-xl' src={witness3} alt='witness' />
-        </div>
-        <div className=' col-span-3 p-10'>
-          <div>
-            <p className='mx-auto md:w-w-3/5		 text-center font-bold text-xl'>Outstanding service! "Social" delivered a lowless translation of our critical document. They were fast ,precise and professional. Highly recommended.</p>
-          </div>
-          <div className=' flex justify-center p-5'>
-            <div>
-              <img className='w-12 h-12 rounded-full' src={witness2} alt='witness' />
-            </div>
-            <div className='p-1 cursor-pointer hover:text-sky-400 items-center'>
-              <p className='font-bold text-sm'>Maya Angele</p>
-              <p className='font-bold text-sm'>Our witness</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
             <p className='font-bold text-2xl text-center  p-10 '>How much do l have to pay? </p>
             <div className='md:justify-center items-center flex gap-28 grid-row md:flex-row flex-col place-content-center md:place-content-center '>
                 <div className=' bg-sky-200 text-sm w-72 p-7 rounded-xl h-80'>

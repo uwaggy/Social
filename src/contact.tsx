@@ -22,7 +22,7 @@ const Contact = () => {
             <div className=" text-sky-500 md:h-[7vh] relative md:invisible	cursor-pointer flex flex-row gap-x-[18rem] ">
                 <div className='flex'>
                     <Icon onClick={() => setOpen(!open)} className='md:hidden w-40 font-bold cursor-pointer' icon="material-symbols:menu" width="40" color="skyblue" />
-                    <img className='w-11 h-8' src={logo} alt='logo' />
+                    <img className='w-10 h-8' src={logo} alt='logo' />
                     <a className='font-bold hover:border-b-2  border-sky-600 flex items-center px-2 text-xl
           '>SOCIAL</a>
                 </div>
@@ -130,7 +130,7 @@ const Contact = () => {
             </div>
             <div className='md:flex-row flex-col flex gap-36 footer h-92	 bg-sky-200 w-screen'>
                 <div className='flex gap-5'>
-                    <img className='w-11 h-8' src={logo} alt='logo' />
+                    <img className=' w-10 h-8' src={logo} alt='logo' />
                     <p className='font-bold flex text-xl
           '>SOCIAL</p>
                 </div>
