@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import profile from './assets/winking.jfif'
@@ -7,7 +6,6 @@ import contact from './assets/final.avif'
 import logo from './assets/logo.png'
 const Contact = () => {
     const [isChecked, setIsChecked] = useState(false);
-    const [name, setName] = useState('');
     const [open, setOpen] = useState(true)
     const handleCheckboxChange = () => {
         setIsChecked(!isChecked);
@@ -33,7 +31,7 @@ const Contact = () => {
                     <Link to={''} className='font-bold  flex items-center px-2'>Translate</Link>
                     <Link to={'/contact'} className='font-bold  flex items-center px-2'>Contact</Link>
                     <Link to={''} className='font-bold  flex items-center px-2'>Subscribe</Link>
-                    {/* <Link to={''} className='font-bold invisible md:visible sm:visible w-12  flex items-center'>Profile</Link> */}
+                   
 
                     <span className='flex items-center px-3'>
                         <img className='rounded-2xl aspect-square h-[2rem] invisible md:invisible sm:visible' src={profile} alt='profile' />
@@ -58,13 +56,13 @@ const Contact = () => {
                     <button className='hover:bg-sky-600 bg-sky-300 font-bold p-1 w-20 h-8 b-1 border-sky-200 rounded-lg'>Sign Up</button>
                 </div>
             </div>
-            {/* <div className='grid grid-flow-row  bg-orange-600'> */}
+         
 
             <div className='p-8 justify-center flex md:flex-row flex-col '>
                 <div className=''>
-                    <img className=' rounded-t-2xl  md:rounded-l-xl  md:w-max w-11/12 h-max' src={contact} alt='contact' />
+                    <img className=' rounded-t-2x rounded-l-2xl  md:w-max w-11/12 h-max' src={contact} alt='contact' />
                 </div>
-                <div className='  w-11/12	 md:w-6/12 md:rounded-r-xl	 md:flex-row flex-col gap-20 flex rounded-b-2xl bg-white  p-1 '>
+                <div className='  w-11/12	 md:w-6/12 md:rounded-r-2xl	 md:flex-row flex-col gap-20 flex rounded-b-2xl bg-white  p-1 '>
                     <div className='font-semibold p-2 text-sm'>
                         <div className='flex md:flex-row flex-col gap-9 w-screen  p-4'>
                             <p className='text-lg font-bold'>Get in touch</p>
@@ -127,7 +125,7 @@ const Contact = () => {
                         <button className=' hover:bg-sky-500 font-bold bg-sky-300 w-72 p-2 rounded-xl'> Send message</button>
                     </div>
                 </div>
-                {/* </div> */}
+               
             </div>
             <div className='md:flex-row flex-col flex gap-36 footer h-92	 bg-sky-200 w-screen'>
                 <div className='flex gap-5'>
