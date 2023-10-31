@@ -9,8 +9,8 @@ import profile from './assets/winking.jfif'
 const Lesson = () => {
     const [open, setOpen] = useState(true)
     return (
-        <div className='md:overflow-x-hidden'>
-            <div className='bg-sky-100  p-4 transform translate-x-11 translate-y-6 rounded-2xl md:w-11/12  w-10/12'>
+        <div className='md:overflow-x-hidden overflow-hidden'>
+            <div className='bg-sky-100  p-4 transform translate-x-11 translate-y-6 rounded-2xl md:w-11/12  w-4/5'>
                 <div className=" text-sky-500 md:h-[7vh] relative	cursor-pointer flex flex-row gap-x-[18rem] ">
                     <div className='flex'>
                         <Icon onClick={() => setOpen(!open)} className='md:hidden w-40 font-bold cursor-pointer' icon="material-symbols:menu" width="40" color="skyblue" />
@@ -21,13 +21,11 @@ const Lesson = () => {
                     <div className={`min-h-full ${open ? 'invisible' : 'visible'} col-span-4 md:visible md:static absolute bg-sky-100 p-3 z-20 top-[8vh] left-[10vw] flex md:flex-row flex-col gap-4`}>
                         <Link to={'/'} className='font-bold  flex items-center px-2'>Home</Link>
                         <Link to={'/lesson'} className='font-bold  flex items-center px-2'>Lesson</Link>
-                        <Link to={''} className='font-bold  flex items-center px-2'>Translate</Link>
+                        <Link to={'/translate'} className='font-bold  flex items-center px-2'>Translate</Link>
                         <Link to={'/contact'} className='font-bold  flex items-center px-2'>Contact</Link>
-                        <Link to={''} className='font-bold  flex items-center px-2'>Subscribe</Link>
+                        <Link to={''} className='font-bold  flex items-center px-2'>Shop</Link>
                         <Link to={''} className='font-bold invisible md:visible sm:visible w-12  flex items-center'>Profile</Link>
-                        <span className='flex items-center px-3'>
-                            <img className='rounded-2xl aspect-square h-[2rem] invisible md:visible sm:visible' src={profile} alt='profile' />
-                        </span>
+                        <Link to={''} className='font-bold invisible md:visible sm:visible w-12  flex items-center'>Leaderboard</Link>
                     </div>
                 </div>
             </div>

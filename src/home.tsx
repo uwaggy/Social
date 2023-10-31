@@ -22,14 +22,13 @@ const Home = () => {
                     </div>
                     <div className={`min-h-full ${open ? 'invisible' : 'visible'} col-span-4 md:visible md:static absolute bg-sky-100 p-3 z-20 top-[8vh] left-[10vw] flex md:flex-row flex-col gap-4`}>
                         <Link to={'/'} className='font-bold  flex items-center px-2'>Home</Link>
-                        <Link to={'/lesson'} className='font-bold  flex items-center px-2'>Lesson</Link>
-                        <Link to={''} className='font-bold  flex items-center px-2'>Translate</Link>
+                        <Link to={'/Lesson'} className='font-bold  flex items-center px-2'>Lesson</Link>
+                        <Link to={'/translate'} className='font-bold  flex items-center px-2'>Translate</Link>
                         <Link to={'/contact'} className='font-bold  flex items-center px-2'>Contact</Link>
-                        <Link to={''} className='font-bold  flex items-center px-2'>Subscribe</Link>
+                        <Link to={'/shop'} className='font-bold  flex items-center px-2'>Shop</Link>
                         <Link to={''} className='font-bold invisible md:visible sm:visible w-12  flex items-center'>Profile</Link>
-                        <span className='flex items-center px-3'>
-                            <img className='rounded-2xl aspect-square h-[2rem] invisible md:visible sm:visible' src={profile} alt='profile' />
-                        </span>
+                        <Link to={''} className='font-bold invisible md:visible sm:visible w-12  flex items-center'>Leaderboard</Link>
+            
                     </div>
                 </div>
                 <div className='h-48 md:flex-row flex-col md:gap-72 flex gap-24 '>

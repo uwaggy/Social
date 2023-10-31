@@ -18,42 +18,24 @@ const Contact = () => {
     return (
         <div className=' bg-sky-100 overflow-hidden'>
 
-            <div className=" text-sky-500 md:h-[7vh] relative md:invisible	cursor-pointer flex flex-row gap-x-[18rem] ">
-                <div className='flex'>
-                    <Icon onClick={() => setOpen(!open)} className='md:hidden w-40 font-bold cursor-pointer' icon="material-symbols:menu" width="40" color="skyblue" />
-                    <img className='w-10 h-8' src={logo} alt='logo' />
-                    <a className='font-bold hover:border-b-2  border-sky-600 flex items-center px-2 text-xl
-          '>SOCIAL</a>
-                </div>
-                <div className={`min-h-full ${open ? 'invisible' : 'visible'} col-span-4 md:invisible md:static absolute bg-sky-100 p-3 z-20 top-[8vh] left-[10vw] flex md:flex-row flex-col gap-4`}>
-                    <Link to={'/'} className='font-bold  flex items-center px-2'>Home</Link>
-                    <Link to={''} className='font-bold  flex items-center px-2'>Lesson</Link>
-                    <Link to={''} className='font-bold  flex items-center px-2'>Translate</Link>
-                    <Link to={'/contact'} className='font-bold  flex items-center px-2'>Contact</Link>
-                    <Link to={''} className='font-bold  flex items-center px-2'>Subscribe</Link>
-                   
-
-                    <span className='flex items-center px-3'>
-                        <img className='rounded-2xl aspect-square h-[2rem] invisible md:invisible sm:visible' src={profile} alt='profile' />
-                    </span>
-                </div>
-            </div>
-            <div className=' bg-sky-100 transform translate-x-52 flex gap-60'>
-                <div className='invisible md:visible font-bold cursor-pointer   gap-6 flex'>
-                <Link to={'/'} className='font-bold px-2'>Home</Link>
+<div className='bg-sky-100  p-4 transform translate-x-11 translate-y-6 rounded-xl md:w-11/12 w-10/12'>
+                <div className=" text-sky-500 md:h-[7vh] relative	cursor-pointer flex flex-row gap-x-[16rem] ">
                     <div className='flex'>
-                        <a>Products</a>
-                        <Icon className='relative top-1' icon="mdi:menu-down" />
+                        <Icon onClick={() => setOpen(!open)} className='md:hidden w-40 font-bold cursor-pointer' icon="material-symbols:menu" width="40" color="skyblue" />
+                        <img className='w-11 h-8' src={logo} alt='logo' />
+                        <a className='font-bold hover:border-b-2  border-sky-600 flex items-center px-2 text-xl
+      '>SOCIAL</a>
                     </div>
-                    <div className='flex'>
-                        <a>Resources</a>
-                        <Icon className='relative top-1' icon="mdi:menu-down" />
+                    <div className={`min-h-full ${open ? 'invisible' : 'visible'} col-span-4 md:visible md:static absolute bg-sky-100 p-3 z-20 top-[8vh] left-[10vw] flex md:flex-row flex-col gap-4`}>
+                        <Link to={'/'} className='font-bold  flex items-center px-2'>Home</Link>
+                        <Link to={'/lesson'} className='font-bold  flex items-center px-2'>Lesson</Link>
+                        <Link to={'/translate'} className='font-bold  flex items-center px-2'>Translate</Link>
+                        <Link to={'/contact'} className='font-bold  flex items-center px-2'>Contact</Link>
+                        <Link to={'/shop'} className='font-bold  flex items-center px-2'>Shop</Link>
+                        <Link to={''} className='font-bold invisible md:visible sm:visible w-12  flex items-center'>Profile</Link>
+                        <Link to={''} className='font-bold invisible md:visible sm:visible w-12  flex items-center'>Leaderboard</Link>
+                        
                     </div>
-                    <a>Pricing</a>
-                </div>
-                <div className='cursor-pointer flex gap-6'>
-                    <p className='text-lg font-bold'>Login</p>
-                    <button className='hover:bg-sky-600 bg-sky-300 font-bold p-1 w-20 h-8 b-1 border-sky-200 rounded-lg'>Sign Up</button>
                 </div>
             </div>
          
